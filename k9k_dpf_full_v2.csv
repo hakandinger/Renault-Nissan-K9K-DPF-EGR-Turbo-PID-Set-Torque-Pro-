@@ -1,0 +1,262 @@
+"Name", "ShortName", "ModeAndPID", "Equation", "Min Value", "Max Value", "Units", "Header", "startDiagnostic", "stopDiagnostic", "scale","minimumRefreshDelayMillis"
+"Catalyst Temperature","CAT.Temp","0x222439","((A*256+B)-2730)/10",0,900,"°C","7E0","","",1,0
+"Engine RPM","RPM","0x010c","(A*256+B)/4",0,6000,"rpm","AUTO","","",1,0
+"Distance Since Last Regen","Regen.KM","0x222554","(A*256+B)",0,2000,"km","7E0","","",1,0
+"Dış Sıcaklık ","Dış Sıc","0x2103","V+10",0,0,"°C","705","","",1,0
+"DPF Ash Load","DPF.Ash","0x22242c","(A*256+B)/100",0,100,"gr","7E0","","",1,0
+"DPF Differential Pressure","DPF.DP","0x222542","(A*256+B)-32768",0,200,"mbar","7E0","","",1,0
+"DPF Inlet Temperature","DPF.Temp","0x222442","((A*256+B)-2730)/10",0,800,"°C","7E0","","",1,0
+"DPF Regeneration Mode","DPF.Mode","0x222056","A",0,4,"","7E0","","",1,0
+"DPF Soot Accumulation","DPF.Soot","0x22242c","(A*256+B)/100",0,50,"gr","7E0","","",1,0
+"İç Sıcaklık ","İç Ortam","0x2121","0.4×B-102",0,60,"°C","744","","",1,0
+"Oil Dilution","Oil.Dil","0x222489","(A*256+B)/655",0,15,"%","7E0","","",1,0
+"PR_"-" TUŞUNA BASMA SÜRESİ","PR829","0x22207c","A",0,0,"s","7E0","","",1,0
+"PR_1. SİLİNDİR YAKIT DEBİSİ DÜZELTMESİ","PR364","0x22fd07","0.0000305*(A*256+B)",0,0,"","7E0","","",1,0
+"PR_2 No'lu SİLİNDİR YAKIT DEBİSİ DÜZELTMESİ","PR405","0x22fd08","0.0000305*(A*256+B)",0,0,"","7E0","","",1,0
+"PR_2. PİST PEDALI POTANSİYOMETRE GERİLİMİ","PR148","0x22200c","(1.0*(A*256+B))/1000",0,0,"V","7E0","","",1,0
+"PR_3 No'lu SİLİNDİR YAKIT DEBİSİ DÜZELTMESİ","PR406","0x22fd09","0.0000305*(A*256+B)",0,0,"","7E0","","",1,0
+"PR_4. SİLİNDİR YAKIT DEBİSİ DÜZELTMESİ","PR365","0x22fd0a","0.0000305*(A*256+B)",0,0,"","7E0","","",1,0
+"PR_AKÜ VOLTAJI 12 V","AKÜ","0x222006","(1.0*((A*256+B)))/1000",7,16.5,"V","743","","",1,0
+"PR_ALTERNATÖR GÜCÜ","PR1029","0x222057","10*(A*256+B)",0,0,"W","7E0","","",1,0
+"PR_ALTERNATÖR ŞARJI","PR002","0x222099","(1.0*(A))/2.55",0,0,"%","7E0","","",1,0
+"PR_ANA ENJEKS. DEBİSİ","PR1031","0x222809","(1.0*((A*256+B)))/100",0,0,"mg/cp","7E0","","",1,0
+"PR_ANLIK YAKIT SEVİYESİ","PR040","0x222201","(1.0*((C*256+D)))/100",0,67,"l","743","","",1,0
+"PR_ANORMAL RV/LV GEÇİŞİ SAYISI","PR849","0x22207e","A",0,0,"","7E0","","",1,0
+"PR_ARAÇ HIZI","HIZ","0x222003","(1.0*((A*256+B)))/100",0,0,"km/h","7E0","","",1,0
+"PR_ARIZANIN BELİRMESİNDE SON KİLOMETRE","PR030","0x190680","(E*65536+F*256+G)",0,0,"km","743","","",1,0
+"PR_ARIZANIN İLK BELİRMESİNDE KİLOMETRESİ","PR869","0x190687","(E*65536+F*256+G)",0,0,"km","7E0","","",1,0
+"PR_ART ENJEKSİYON DEBİSİ","PR1229","0x22280d","(1.0*((A*256+B)))/100",0,0,"mg/cp","7E0","","",1,0
+"PR_ART ENJEKSİYON FAZ AYARI","PR1245","0x222813","(1.0*((A*256+B)-32768))/50",0,0,"","7E0","","",1,0
+"PR_ATMOSFER BASINCI KAPTÖRÜ GERİLİMİ","PR079","0x222012","(1.0*(A*256+B))/1000",0,0,"V","7E0","","",1,0
+"PR_ATMOSFERIK BASINÇ","PR035","0x222009","(A*256+B)",0,0,"mbar","7E0","","",1,0
+"PR_AŞIRI BESLEME BASINCI","Turbo basınç ","0x222401","(A*256+B)",0,0,"mbar","7E0","","",1,0
+"PR_AŞIRI BESLEME BASINCI ANİ","PR931","0x22f40b","(A)*10",0,0,"mbar","7E0","","",1,0
+"PR_AŞIRI BESLEME BASINÇ KAPTÖRÜ GERİLİMİ","PR224","0x22fd82","(1.0*((A*256+B)))/6553.6",0,0,"V","7E0","","",1,0
+"PR_AŞIRI BESLEME E.V ÇEVRİMSEL AÇILMA ORANI","PR846","0x222403","(1.0*((A*256+B)))/100",0,0,"%","7E0","","",1,0
+"PR_AŞIRI BESLENME BASINÇ AYARI","PR009","0x222402","(A*256+B)",0,0,"mbar","7E0","","",1,0
+"PR_BAŞARILI SON TEMİZLEME İŞLEMİ SONRASI KM","pf sonrasi gecilen km","0x2224a9","(A*65536+B*256+C)",0,0,"km","7E0","","",1,0
+"PR_BAŞARILI TEMİZLEME SAYACI","+ temizleme","0x222481","A",0,0,"adet","7E0","","",1,0
+"PR_BAŞARISIZ TEMİZLEME SAYISI","-temizleme","0x222485","A",0,0,"adet","7E0","","",1,0
+"PR_BEYİN BESLEME GERİLİMİ","PR071","0x222005","(1.0*((A*256+B)))/100",0,0,"V","7E0","","",1,0
+"PR_BRÜT MOTOR TORKU","PR1019","0x222067","(1.0*((A*256+B)))/32",0,0,"Nm","7E0","","",1,0
+"PR_BU DURUMDA ARIZA SAYISI","PR806","0x190684","E",0,0,"","7E0","","",1,0
+"PR_DAHİLİ SİRKÜLASYON MOTORU REFERANS DEĞERİ","PR039","0x2127","(D&127)",0,100,"%","744","","",1,0
+"PR_DAĞITIM MOTORU REFERANS DEĞERİ","PR048","0x2127","(A&127)",0,100,"%","744","","",1,0
+"PR_DEBİMETRE BİLGİSİNİN ORTALAMA SÜRESİ","PR1022","0x22fd69","(A*256+B)",0,0,"µs","7E0","","",1,0
+"PR_DEVİRDAİM KAPAKÇIĞI POZİSYONU","devirdaim","0x2127","(J&127)",0,100,"%","744","","",1,0
+"PR_EGR KAPTÖRÜ BESLEME VOLTAJI","PR1033","0x2224d5","(A*256+B)",0,0,"mV","7E0","","",1,0
+"PR_EGR KONUMU","egr konum","0x222407","(1.0*((A*256+B)))/20.491",0,0,"%","7E0","","",1,0
+"PR_EGR POTANSİYOMETRE GERİLİMİ","PR160","0x222424","(1.0*(A*256+B))/1000",0,0,"V","7E0","","",1,0
+"PR_EGR VANA KUMANDASI","PR241","0x222409","(1.0*((A*256+B)-32768))/100",0,0,"%","7E0","","",1,0
+"PR_EGR VANASI BİRİNCİ OFFSET","PR128","0x22242a","(1.0*((A*256+B)))/20.4918",0,0,"%","7E0","","",1,0
+"PR_EGR VANASI KAPALI. POTANSİYOMETRE DEĞERİ","PR542","0x2224cf","(1.0*(A*256+B))/20.491",0,0,"%","7E0","","",1,0
+"PR_EGR VANASININ AÇILIŞ TALİMATI","PR005","0x222408","(1.0*((A*256+B)-32768))/100",0,0,"%","7E0","","",1,0
+"PR_EGZOZ HATTI DEBİSİ","EGZOZ DEBİ","0x2224e2","(1.0*((A*256+B)))/100",0,0,"g/s","7E0","","",1,0
+"PR_EK BİLGİLER 246E","PR1032","0x22246e","(1.0*((A*256+B)-32768))/100",0,0,"%","7E0","","",1,0
+"PR_EK BİLGİLER 24D0","PR1054","0x2224d0","A",0,0,"","7E0","","",1,0
+"PR_EK BİLGİLER 287A","PR1034","0x22287a","{A:0}",0,0,"","7E0","","",1,0
+"PR_EK BİLGİLER FD19","PR1039","0x22fd19","(1.0*((A*256+B)-32768))/2041.466",0,0,"","7E0","","",1,0
+"PR_EK BİLGİLER FD1A","PR1040","0x22fd1a","(1.0*((A*256+B)-32768))/2041.466",0,0,"","7E0","","",1,0
+"PR_EK BİLGİLER FD1B","PR1041","0x22fd1b","(1.0*((A*256+B)-32768))/2041.466",0,0,"","7E0","","",1,0
+"PR_EK BİLGİLER FD1C","PR1042","0x22fd1c","(1.0*((A*256+B)-32768))/2041.466",0,0,"","7E0","","",1,0
+"PR_EK BİLGİLER FD42","PR1059","0x22fd42","A",0,0,"","7E0","","",1,0
+"PR_EK BİLGİLER FD43","PR1060","0x22fd43","A",0,0,"","7E0","","",1,0
+"PR_EK BİLGİLER FD4D","PR1058","0x22fd4d","A",0,0,"","7E0","","",1,0
+"PR_EK BİLGİLER FD4E","PR1061","0x22fd4e","A",0,0,"","7E0","","",1,0
+"PR_EMME HAVASI BASINCI","EMME HAVASI","0x22240d","(1.0*((A*256+B)-2730))/10",0,0,"°C","7E0","","",1,0
+"PR_EMME HAVASI SICAKLIK KAPTÖRÜ GERİLİMİ","PR847","0x22fd84","(1.0*((A*256+B)))/6553.6",0,0,"V","7E0","","",1,0
+"PR_EMME KAPAKÇIĞI KUMANDASI","PR279","0x222406","(1.0*((A*256+B)-32768))/100",0,0,"%","7E0","","",1,0
+"PR_EMME KLAPESİ AÇIK BİRİNCİ OFFSET'İ","PR858","0x222425","(1.0*(A*256+B))/20.491",0,0,"%","7E0","","",1,0
+"PR_EMME KLAPESİ AÇIK SON OFFSET'İ","PR861","0x222426","(1.0*(A*256+B))/20.4918",0,0,"%","7E0","","",1,0
+"PR_EMME KLAPESİ GİRİŞ SICAKLIĞI","PR1024","0x22244d","(1.0*((A*256+B)-2730))/10",0,0,"°C","7E0","","",1,0
+"PR_EMME KLAPESİ KAPALI BİRİNCİ OFFSET'İ","PR859","0x222427","(1.0*(A*256+B))/20.491",0,0,"%","7E0","","",1,0
+"PR_EMME KLAPESİ KAPALI SON OFFSET'İ","PR860","0x222428","(1.0*(A*256+B))/20.491",0,0,"%","7E0","","",1,0
+"PR_EMME KLAPESİ KAPTÖR GERİLİMİ","PR774","0x222417","(1.0*(A*256+B))/1000",0,0,"V","7E0","","",1,0
+"PR_EMME KLAPESİ KONUM REFERANS DEĞERİ","PR1025","0x2224d2","(1.0*((A*256+B)-32767))/20.491",0,0,"%","7E0","","",1,0
+"PR_ENJEK. SONRASI DEBİ 1","PR988","0x22280e","(1.0*((A*256+B)))/100",0,0,"mg/cp","7E0","","",1,0
+"PR_FARK BASINCI PARTİKÜL FİLTRESİ","PR414","0x222542","(A*256+B)-32768",0,0,"mbar","7E0","","",1,0
+"PR_GAZ PEDALININ KONUMU","PR030","0x22202e","(1.0*((A*256+B)))/8",0,0,"%","7E0","","",1,0
+"PR_GİRİŞ KANADI BAĞLANTI VOLTAJI TEŞHİSİ","PR1016","0x2224d3","(1.0*(A*256+B))/1000",0,0,"V","7E0","","",1,0
+"PR_GİRİŞ KLAPESİ KAPTÖRÜ BELEMESİNİN VOLTAJI","PR1023","0x2224d6","(1.0*(A*256+B))/1000",0,0,"V","7E0","","",1,0
+"PR_GİRİŞTE HAVA DEBİSİ","PR146","0x222412","(1.0*((A*256+B)))/10",0,0,"mg/cp","7E0","","",1,0
+"PR_GÖSTERİLEN ARAÇ HIZI","PR851","0x222050","(1.0*((A*256+B)))/100",0,0,"km/h","7E0","","",1,0
+"PR_GÖSTERİLEN YAKIT SEVİYESİ","PR039","0x222201","(1.0*((G*256+H)))/100",0,67,"l","743","","",1,0
+"PR_GÜN OLARAK YAĞ DEĞİŞTİRME","PR038","0x220202","(C*256+D)",0,0,"GÜN","743","","",1,0
+"PR_GÜN OLARAK YAĞ DEĞİŞTİRME PERİYODU","PR050","0x220201","(C*256+D)",0,0,"GÜN","743","","",1,0
+"PR_HACİM/GÖSTERGE 1 VE DEPO SEVİYESİ","PR059","0x220305","H",0,0,"l","743","","",1,0
+"PR_HACİM/GÖSTERGE 1/2 DOLU","PR062","0x220305","E",0,0,"l","743","","",1,0
+"PR_HACİM/GÖSTERGE 1/4 DOLU","PR060","0x220305","G",0,0,"l","743","","",1,0
+"PR_HACİM/GÖSTERGE 3/4 DOLU","PR064","0x220305","C",0,0,"l","743","","",1,0
+"PR_HACİM/GÖSTERGE 3/8 DOLU","PR061","0x220305","F",0,0,"l","743","","",1,0
+"PR_HACİM/GÖSTERGE 5/8 DOLU","PR063","0x220305","D",0,0,"l","743","","",1,0
+"PR_HACİM/GÖSTERGE 7/8 DOLU","PR065","0x220305","B",0,0,"l","743","","",1,0
+"PR_HACİM/GÖSTERGE TAM DOLU","PR066","0x220305","A",0,0,"l","743","","",1,0
+"PR_HAVA DEBİSİ KAYDI","PR180","0x222413","(1.0*((A*256+B)))/10",0,0,"mg/cp","7E0","","",1,0
+"PR_HAVA GİRİŞ KANADI MEVCUT KONUMU","PR1017","0x222404","(1.0*((A*256+B)))/20.491",0,0,"%","7E0","","",1,0
+"PR_HAVA GİRİŞ KLAPESİ MUTLAK KONUMU","PR1021","0x2224ca","(1.0*((A*256+B)))/20.491",0,0,"%","7E0","","",1,0
+"PR_HAVALANDIRMA HIZ KUMANDASI","PR030","0x2121","0.1*J",0,15,"V","744","","",1,0
+"PR_HR/HL BUTONU GERİLİMİ","PR135","0x222039","(1.0*(A*256+B))/1000",0,0,"V","7E0","","",1,0
+"PR_KABİN VMG PWM İŞARETİ","PR019","0x2121","K",0,100,"%","744","","",1,0
+"PR_KAPTÖRLERİN 1 NOLU BESLEME GERİLİMİ","PR215","0x222021","(1.0*(A*256+B))/1000",0,0,"V","7E0","","",1,0
+"PR_KAPTÖRLERİN 2 NOLU BESLEME GERİLİMİ","PR216","0x222022","(1.0*(A*256+B))/1000",0,0,"V","7E0","","",1,0
+"PR_KAPTÖRLERİN 3 NO'LU BESLEME GERİLİMİ","PR635","0x222023","(1.0*(A*256+B))/1000",0,0,"V","7E0","","",1,0
+"PR_KATEDİLEN KİLOMETRE MEVCUT ARIZA","PR870","0x190686","(E*65536+F*256+G)",0,0,"km","7E0","","",1,0
+"PR_KİLOMETRAJ","PR025","0x222006","(A*65536+B*256+C)",0,0,"km","7E0","","",1,0
+"PR_KLİMA DAĞITIM KLAPESİ KONUMU","PR011","0x2127","(G&127)",0,100,"%","744","","",1,0
+"PR_KM OLARAK YAĞ DEĞİŞTİRME PERİYODU","PR005","0x220201","(A*256+B)",0,0,"km","743","","",1,0
+"PR_KRANKMİLİ SENKRONİZASYON KAYBI SAYACI","PR1026","0x222162","(A*256+B)",0,0,"","7E0","","",1,0
+"PR_MANİFOLD BASINCI","PR312","0x22240b","(A*256+B)",0,0,"mbar","7E0","","",1,0
+"PR_MIL OLARAK KİLOMETRE SAYACI","PR026","0x220205","(A*65536+B*256+C)*(1.0*64)/103",0,0,"miles","743","","",1,0
+"PR_MİL OLARAK YAĞ DEĞİŞTİRME PERİYODU","PR024","0x220201","(A*256+B)*(1.0*64)/103",0,0,"miles","743","","",1,0
+"PR_MOTOR DÖNÜŞ SAYISI","PR1232","0x22210e","(1.0*(A*16777216+B*65536+C*256+D))/1000000",0,0,"devir","7E0","","",1,0
+"PR_MOTOR TORK","TORK","0x222004","(1.0*((A*256+B)-12800))/32",0,0,"Nm","7E0","","",1,0
+"PR_MOTOR YAĞI AZALTMA ORANI","PR932","0x2224ec","(1.0*((signed(A)*16777216+B*65536+C*256+D)))/1000000",0,0,"%","7E0","","",1,0
+"PR_NEM","NEM","0x2121","0.5*C",0,100,"%","744","","",1,0
+"PR_ODOMETRE ÖLÇÜMÜ","PR009","0x220205","(A*65536+B*256+C)",0,0,"km","743","","",1,0
+"PR_PARAMETRE PRIVE 1","PR303","0x22201c","A",0,0,"","7E0","","",1,0
+"PR_PARAMETRE PRIVE 2","PR304","0x222875","(A*256+B)",0,0,"","7E0","","",1,0
+"PR_PARAMETRE PRIVE 36","PR1004","0x222486","(1.0*(A))/2.55",0,0,"%","7E0","","",1,0
+"PR_PARAMETRE PRIVE 4","PR306","0x222057","10*(A*256+B)",0,0,"W","7E0","","",1,0
+"PR_PART. FİLT. BAĞIL?BASINÇ?KAPTÖRÜ?VOLTAJI","PR1006","0x222446","(1.0*(A*256+B))/1000",0,0,"V","7E0","","",1,0
+"PR_PART. FİLT. ÖN SICAKLIĞI REFERANS?DEĞERİ","PR1009","0x222432","(1.0*((A*256+B)-2730))/10",0,0,"°C","7E0","","",1,0
+"PR_PART. FİLTR. GİRİŞİ SICAK. KAPT. GERİLİM","PR670","0x22fd88","(1.0*((A*256+B)))/6553",0,0,"V","7E0","","",1,0
+"PR_PARTİKÜL FİLTRESİ BASINÇ OFFSET DEĞERİ","PR1020","0x2224c2","(A*256+B)-32768",0,0,"mbar","7E0","","",1,0
+"PR_PARTİKÜL FİLTRESİ DEĞİŞİMİ SONRASI KM","PR1078","0x2224bb","(A*65536+B*256+C)",0,0,"km","7E0","","",1,0
+"PR_PARTİKÜL FİLTRESİ GİRİŞİNDEKİ SICAKLIK","PF GİRİŞİ ","0x222442","(1.0*((A*256+B)-2730))/10",0,0,"°C","7E0","","",1,0
+"PR_PARTİKÜL FİLTRESİNDE KURUM MİKTARI","KURUM","0x22242c","(1.0*((A*256+B)))/100",0,0,"gram","7E0","","",1,0
+"PR_PARTİKÜL FİLTRESİNE BAĞLI BASINÇ ANİ","PR929","0x2224e3","(A*256+B)-32768",0,0,"mbar","7E0","","",1,0
+"PR_PARTİKÜL?FİLTRESİ?ENJEKTÖRÜ?RCO KOMUTU","PR1007","0x222826","(1.0*((A*256+B)))/100",0,0,"%","7E0","","",1,0
+"PR_PARTİKÜL?FİLTRESİ?İÇİNDE?GAZ?AKIŞI","PF İÇİ  GAZ AKIŞ","0x222447","(1.0*((A*256+B)))/10",0,0,"m3/sa","7E0","","",1,0
+"PR_RAIL BASINCI","RAİL","0x222801","(A*256+B)",0,0,"bar","7E0","","",1,0
+"PR_RAIL BASINCI REGÜLATÖR AKIMI","PR006","0x22fdba","(1.0*(((A*256+B))*1000))/314.76",0,0,"mA","7E0","","",1,0
+"PR_RAIL BASINCI TALİMATI","PR008","0x222802","(A*256+B)",0,0,"bar","7E0","","",1,0
+"PR_RAMPA BASINCI DÜZENLEME VANASI RCO","PR048","0x22fdb9","(1.0*((A*256+B)))/655.36",0,0,"%","7E0","","",1,0
+"PR_RAMPA BASINCI KAPTÖR GERİLİMİ","PR080","0x22fd8a","(1.0*((A*256+B)))/13106.159",0,0,"V","7E0","","",1,0
+"PR_RAMPA DEBİ DÜZENLEME VANASI ÇAO","PR864","0x22fdb6","(1.0*((A*256+B)))/655.36",0,0,"%","7E0","","",1,0
+"PR_SAĞ GÜNEŞLİLİK KAPTÖRÜ","PR028","0x2122","50*(N&31)",0,0,"W/m²","744","","",1,0
+"PR_SAĞ KARIŞIM KANADI KONUMU","PR021","0x2127","(K&127)",0,100,"%","744","","",1,0
+"PR_SAĞ TARAF HAVA KARIŞIM MOTORU REF. DEĞ.","PR035","0x2127","(E&127)",0,100,"%","744","","",1,0
+"PR_SİLİNDİR 1 ADAPTASYON DURUMU","PR1035","0x22fd15","A",0,0,"","7E0","","",1,0
+"PR_SİLİNDİR 2 ADAPTASYON DURUMU","PR1036","0x22fd16","A",0,0,"","7E0","","",1,0
+"PR_SİLİNDİR 3 ADAPTASYON DURUMU","PR1037","0x22fd17","A",0,0,"","7E0","","",1,0
+"PR_SİLİNDİR 4 ADAPTASYON DURUMU","PR1038","0x22fd18","A",0,0,"","7E0","","",1,0
+"PR_SOL GÜNEŞLİLİK KAPTÖRÜ","PR027","0x2122","50*(M&31)",0,1000,"W/m²","744","","",1,0
+"PR_SOL KARIŞIM KANADI KONUMU","PR020","0x2127","(H&127)",0,100,"%","744","","",1,0
+"PR_SOL TARAF HAVA KARIŞIM MOTORU REF. DEĞ.","PR034","0x2127","(B&127)",0,100,"%","744","","",1,0
+"PR_SON EGR VANASI OFFSET'İ","PR129","0x222429","(1.0*((A*256+B)))/20.4918",0,0,"%","7E0","","",1,0
+"PR_SON YENİLEMEDEN BERİ GEÇEN SÜRE","geçen süre ","0x222488","(1.0*(A*256+B))/3600",0,0,"saat","7E0","","",1,0
+"PR_SON?TEMİZLEMENİN?SÜRESİ","TEMİZLİK","0x222487","(1.0*((A*256+B)))/600",0,0,"dk","7E0","","",1,0
+"PR_SOĞUTUCU SIVI BASINCI","SU BASINCI","0x22222a","(1.0*((A*256+B)))/10",0,0,"bar","7E0","","",1,0
+"PR_SU SICAKLIĞI","SU","0x222004","K-40",0,0,"°C","743","","",1,0
+"PR_SU SICAKLIĞI KAPTÖRÜ GERİLİMİ","PR084","0x22fd8b","(1.0*((A*256+B)))/6553.6",0,0,"V","7E0","","",1,0
+"PR_TAHMİNİ HAVA DEBİSİ","PR018","0x222421","(1.0*((A*256+B)))/10",0,0,"mg/cp","7E0","","",1,0
+"PR_TÜRBİN GİRİŞİ BASINÇ KAPTÖRÜ GERİLİMİ","PR782","0x22fd86","(1.0*((A*256+B)))/6553",0,0,"V","7E0","","",1,0
+"PR_TÜRBİN GİRİŞİ SICAKLIK REF. DEĞERİ","PR889","0x222438","(1.0*((A*256+B)-2730))/10",0,0,"°C","7E0","","",1,0
+"PR_TÜRBİN GİRİŞİNDEKİ BASINCI","TURBO BASINÇ","0x222448","(A*256+B)",0,0,"mbar","7E0","","",1,0
+"PR_TÜRBİN GİRİŞİNDEKİ SICAKLIK","TURBO GİRİŞİ ","0x222439","(1.0*((A*256+B)-2730))/10",0,0,"°C","7E0","","",1,0
+"PR_TÜRBİN ÇIKIŞI SICAKLIK KAPTÖRÜ GERİLİMİ","PR668","0x22243a","(1.0*((A*256+B)))/6553.08",0,0,"V","7E0","","",1,0
+"PR_YAKIT DEBİSİ","PR112","0x222103","A",0,0,"l/h","743","","",1,0
+"PR_YAKIT DEBİSİ ELEKTR. AKIM REF. DEĞERİ","PR850","0x22fdb7","((A*256+B))",0,0,"mA","7E0","","",1,0
+"PR_YAKIT DEBİSİ ELEKTROVANA GERİLİMİ","PR739","0x22fdb8","(1.0*(((A*256+B))*1000))/314.76",0,0,"mA","7E0","","",1,0
+"PR_YAKIT SICAKLIĞI","YAKIT","0x222008","(1.0*((A*256+B)-2730))/10",0,0,"°C","7E0","","",1,0
+"PR_YAKIT SICAKLIĞI KAPTÖR GERİLİMİ","PR082","0x22fd89","(1.0*((A*256+B)))/6553.6",0,0,"V","7E0","","",1,0
+"PR_YAKIT TÜKETİMİ","PR003","0x222102","(1.0*(5*(A*256+B)))/100",0,0,"l","743","","",1,0
+"PR_YAKIT ŞAMANDIRASI REZİSTANSI","PR002","0x222201","(A*256+B)",5,350,"ohm","743","","",1,0
+"PR_YAĞ DEĞ. KDR GİDİL. MESAFE:ŞU ANKİ DEĞER","PR023","0x220202","(A*256+B)*(1.0*64)/103",0,0,"miles","743","","",1,0
+"PR_YAĞ DEĞİŞİM SÜRESİ: O GÜNKÜ DEĞER (KM)","PR007","0x220202","(A*256+B)",0,0,"km","743","","",1,0
+"PR_ÖLÇÜLEN HAVA DEBİSİ","PR916","0x2224f2","(1.0*((A*256+B)))/10",0,0,"kg/h","7E0","","",1,0
+"PR_ÖN ISITMA BUJİLERİ KUMANDASI","PR890","0x222052","(1.0*(A))/2.55",0,0,"%","7E0","","",1,0
+"PR_ÖN ISITMA MODU","PR891","0x22219a","(1.0*((A*256+B)))/4",0,0,"%","7E0","","",1,0
+"ST_1 NO.LU TERMOPLONJÖR RÖLE KUMANDASI","ET205","0x22201d","{A:0}",0,0,"","7E0","","",1,0
+"ST_1. EMME?SUPABI?AÇILIŞI?PROGRAMLANDI","ET827","0x222477","{A:0}",0,0,"","7E0","","",1,0
+"ST_1. EMME?SUPABI?KAPANIŞI?PROGRAMLANDI","ET828","0x222478","{A:0}",0,0,"","7E0","","",1,0
+"ST_2 NO.LU TERMOPLONJÖR RÖLE KUMANDASI","ET206","0x22201d","{A:1}",0,0,"","7E0","","",1,0
+"ST_3 NO.LU TERMOPLONJÖR RÖLE KUMANDASI","ET207","0x22201d","{A:2}",0,0,"","7E0","","",1,0
+"ST_ADAC GÖSTERİM TİPİ","LC003","0x220106","A",0,0,"","743","","",1,0
+"ST_ANTİPATİNAJ/DÜZENLEMEDE SAVRULMA ÖNLEME","ET807","0x222079","{A:2}",0,0,"","7E0","","",1,0
+"ST_ARAÇ HIZI BİRİMİ","ET767","0x222051","{A:0}",0,0,"","7E0","","",1,0
+"ST_ARAÇ HIZI BİRİMİNDE DEĞİŞİKLİK","ET797","0x22204e","{A:4}",0,0,"","7E0","","",1,0
+"ST_ARAÇ HIZI MÜLTİPLEKSLİ BİLGİSİ","ET724","0x222225","{A:0}",0,0,"","7E0","","",1,0
+"ST_ARIZA MODUNDA OVK","ET756","0x22204f","{A:6}",0,0,"","7E0","","",1,0
+"ST_AŞIRI HIZ ALARMI","LC076","0x22010f","A",0,0,"","743","","",1,0
+"ST_BEYİN KONTAK SONRASI + AKIMI","ET001","0x22200e","{A:0}",0,0,"","7E0","","",1,0
+"ST_BİRİNCİ MARŞ","ET760","0x222047","{A:0}",0,0,"","7E0","","",1,0
+"ST_CC/SL BAĞLANTI İZNİ","ET832","0x22222f","A",0,0,"","7E0","","",1,0
+"ST_DEBREYAJ PEDAL KONTAKTÖRÜ","ET405","0x22222d","(A&7)",0,0,"","7E0","","",1,0
+"ST_DEBRİYAJ BİLGİSİ MEVCUT DEĞİL","ET785","0x22204f","{A:0}",0,0,"","7E0","","",1,0
+"ST_DEBRİYAJ BİLGİSİ YOK","ET786","0x22204f","{A:1}",0,0,"","7E0","","",1,0
+"ST_DEBRİYAJ KONTAĞI MÜLTİPLEKS BİLGİSİ","ET757","0x222222","{A:0}",0,0,"","7E0","","",1,0
+"ST_DIL VERSIYONU","LC002","0x220101","A",0,0,"","743","","",1,0
+"ST_DÜŞÜK HIZ FAN MOTORU SON KOMUTU","ET819","0x22204a","{A:6}",0,0,"","7E0","","",1,0
+"ST_EGR FONKSİYONU ÖĞRETİSİ","ET336","0x222479","{A:0}",0,0,"","7E0","","",1,0
+"ST_EGZOZ?ENJEKTÖRÜ?ELEKTROVANASI?KOMUTU","ET826","0x222878","{A:0}",0,0,"","7E0","","",1,0
+"ST_EGZOZUN SOĞUTULMASI","ET587","0x22240f","{A:0}",0,0,"","7E0","","",1,0
+"ST_EKSANTRİK MİLİ/TDC SENKRONİZASYONU","ET775","0x222014","{A:0}",0,0,"","7E0","","",1,0
+"ST_EL FRENİ","ET097","0x222001","A",0,0,"","743","","",1,0
+"ST_ENJEKSİYON DÜŞÜK HIZ FAN MOTORU KOMUTU","ET813","0x22204a","{A:0}",0,0,"","7E0","","",1,0
+"ST_ENJEKSİYON İLE HIZ LİMİTÖRÜ YASAKLAMA","ET835","0x222079","{A:6}",0,0,"","7E0","","",1,0
+"ST_ENJEKSİYON İLE HIZ REGÜLATÖRÜ YASAKLAMA","ET834","0x222079","{A:5}",0,0,"","7E0","","",1,0
+"ST_ENJEKSİYON İLE HL YASAKLAMA","ET792","0x22204e","{A:5}",0,0,"","7E0","","",1,0
+"ST_ENJEKSİYON İLE HR YASAKLAMA","ET791","0x22204f","{A:7}",0,0,"","7E0","","",1,0
+"ST_ENJEKSİYON YÜKSEK HIZ FAN MOTORU KOMUTU","ET814","0x22204a","{A:1}",0,0,"","7E0","","",1,0
+"ST_ETAT PRIVE 5","ET098","0x222124","{A:0}",0,0,"","7E0","","",1,0
+"ST_FREN BİLGİSİ MECVUT DEĞİL","ET787","0x22204f","{A:2}",0,0,"","7E0","","",1,0
+"ST_FREN BİLGİSİ YOK","ET788","0x22204f","{A:3}",0,0,"","7E0","","",1,0
+"ST_FREN MÜLTİPLEKS BİLGİSİ ALGILANIYOR","ET759","0x22200f","(A&15)",0,0,"","7E0","","",1,0
+"ST_FREN SIVISI SEVİYESİ EN ALT DÜZEYDE","ET019","0x222002","C",0,0,"","743","","",1,0
+"ST_FRENE BASMADAN ANİ YAVAŞLAMA","ET790","0x22204f","{A:5}",0,0,"","7E0","","",1,0
+"ST_FRENE BASMADAN YAVAŞLAMA","ET789","0x22204f","{A:4}",0,0,"","7E0","","",1,0
+"ST_GERİ VİTES GEÇİRME","ET726","0x222079","{A:1}",0,0,"","7E0","","",1,0
+"ST_GERÇEK ARAÇ HIZ BİLGİSİ MEVCUT DEĞİL","ET793","0x22204e","{A:0}",0,0,"","7E0","","",1,0
+"ST_GERÇEK ARAÇ HIZI BİLGİSİ YOK","ET795","0x22204e","{A:2}",0,0,"","7E0","","",1,0
+"ST_GÖSTERİLEN ARAÇ HIZ BİLGİSİ MEVCUT DEĞİL","ET794","0x22204e","{A:1}",0,0,"","7E0","","",1,0
+"ST_GÖSTERİLEN ARAÇ HIZI","ET723","0x222226","{A:0}",0,0,"","7E0","","",1,0
+"ST_GÖSTERİLEN ARAÇ HIZI BİLGİSİ YOK","ET796","0x22204e","{A:3}",0,0,"","7E0","","",1,0
+"ST_HIZ AYARLAMASI","ET043","0x222079","{A:3}",0,0,"","7E0","","",1,0
+"ST_HIZ LİMİTÖRÜ FONKSİYONU","LC165","0x22203d","{A:0}",0,0,"","7E0","","",1,0
+"ST_HIZ REGÜLATÖRÜ İŞLEVİ","LC166","0x22203a","{A:0}",0,0,"","7E0","","",1,0
+"ST_HIZ REGÜLATÖRÜ/HIZ LİMİTÖRÜ TUŞLARI","LC167","0x222041","{A:0}",0,0,"","7E0","","",1,0
+"ST_HIZ REGÜLATÖRÜ/LİMİTÖRÜ","LC061","0x220108","A",0,0,"","743","","",1,0
+"ST_HIZ REGÜLATÖRÜ/SINIRLAMA İŞLEVİ","ET413","0x22204c","(A&7)",0,0,"","7E0","","",1,0
+"ST_HL TUŞUNA BASARAK HR/HL BAĞLANTISI","ET728","0x22203e","{A:0}",0,0,"","7E0","","",1,0
+"ST_HR TUŞUNA BASARAK HR/HL BAĞLANTISI","ET727","0x22203b","{A:0}",0,0,"","7E0","","",1,0
+"ST_ISITMALI SÜRÜCÜ KOLTUĞU","ET253","0x222007","A",0,0,"","743","","",1,0
+"ST_ISITMALI YOLCU KOLTUĞU","ET252","0x222008","A",0,0,"","743","","",1,0
+"ST_KABLOLU FREN BAĞLANTISI","ET799","0x222026","(A&3)",0,0,"","7E0","","",1,0
+"ST_KLIMA ISTEGI","ET018","0x222229","{A:0}",0,0,"","7E0","","",1,0
+"ST_KLIMA IZNI","ET116","0x222092","{A:0}",0,0,"","7E0","","",1,0
+"ST_KLİMANIN DÜŞÜK HIZLI FAN MOTORU KOMUTU","ET815","0x22204a","{A:2}",0,0,"","7E0","","",1,0
+"ST_KLİMANIN YÜKSEK HIZLI FAN MOTORU KOMUTU","ET816","0x22204a","{A:3}",0,0,"","7E0","","",1,0
+"ST_KRANK MİLİ SİNYALİ","ET879","0x222161","{A:0}",0,0,"","7E0","","",1,0
+"ST_KRANKMİLİ SENKRONİZASYONU","ET837","0x222016","{A:0}",0,0,"","7E0","","",1,0
+"ST_LASTİK BASINCI BİRİMİ","LC047","0x220107","A",0,0,"","743","","",1,0
+"ST_MANÜEL VEYA TAKVİYELİ PARK FRENİ","ET732","0x22222b","{A:0}",0,0,"","7E0","","",1,0
+"ST_MARŞ BUTONU","ET691","0x222079","{A:0}",0,0,"","7E0","","",1,0
+"ST_MESAFE BİRİMİ","LC051","0x220104","A",0,0,"","743","","",1,0
+"ST_MİNİ YAKITLA İLGİLİ BİLGİ","ET521","0x22281b","{A:0}",0,0,"","7E0","","",1,0
+"ST_MOTOR","ET038","0x222010","A",0,0,"","7E0","","",1,0
+"ST_MOTOR ÇALIŞIRKEN","ET036","0x2122","(P&3)",0,0,"","744","","",1,0
+"ST_MOTORİNDE SU SAPTANMASI","ET649","0x22fd70","{A:0}",0,0,"","7E0","","",1,0
+"ST_MVK VİTES KOLU BOŞTA","ET755","0x22222e","(A&3)",0,0,"","7E0","","",1,0
+"ST_OTO-VİTES KUTUSU DÜŞÜK HIZ FAN KOMUTU","ET817","0x22204a","{A:4}",0,0,"","7E0","","",1,0
+"ST_OTO-VİTES KUTUSU YÜKSEK HIZ FAN KOMUTU","ET818","0x22204a","{A:5}",0,0,"","7E0","","",1,0
+"ST_SIKIŞMIŞ GAZ PEDALININ ALGILANMASI","ET673","0x222036","A",0,0,"","7E0","","",1,0
+"ST_SSPP FONKSİYONU","LC105","0x22010e","A",0,0,"","743","","",1,0
+"ST_STATİK TEMİZLEME","ET702","0x222434","(A&7)",0,0,"","7E0","","",1,0
+"ST_STROK BAŞLANGICI DEBRİYAJ KONTAĞI HATTI","ET764","0x22222f","{A:0}",0,0,"","7E0","","",1,0
+"ST_TEMİZLEME?KOMUTU","ET824","0x22246d","A",0,0,"","7E0","","",1,0
+"ST_TEMİZLEME?YETKİSİ","ET825","0x222166","{A:0}",0,0,"","7E0","","",1,0
+"ST_TURBO DÜZENLEME","ET774","0x22241e","(A&31)",0,0,"","7E0","","",1,0
+"ST_TÜKETİM ÖLÇÜMÜ BİRİMİ","LC054","0x220105","A",0,0,"","743","","",1,0
+"ST_VİTES GEÇİŞİ","ET041","0x222c04","(A&7)",0,0,"","7E0","","",1,0
+"ST_VİTES KUTUSU  TIPI","LC029","0x220102","A",0,0,"","743","","",1,0
+"ST_YANMA MODU","ET839","0x222056","(A&15)",0,0,"","7E0","","",1,0
+"ST_YANMA MODU AYARI","ET838","0x222055","(A&15)",0,0,"","7E0","","",1,0
+"ST_YÜKSEK HIZ FAN MOTORU SON KOMUTU","ET820","0x22204a","{A:7}",0,0,"","7E0","","",1,0
+"ST_ZEHİRLİ GAZ KAPTÖRÜ","LC004","0x2101","J",0,0,"","744","","",1,0
+"ST_ÖN ISITMA İKAZ IŞIĞI","ET115","0x222823","{A:0}",0,0,"","7E0","","",1,0
+"ST_ÖN ISITMA RÖLE KUMANDASI","ET160","0x22201a","{A:0}",0,0,"","7E0","","",1,0
+"Turbo Pressure (MAP)","Boost","0x010b","(A*256+B)",800,3000,"mbar","AUTO","","",1,0
+"Vehicle Speed","Speed","0x222003","(A*256+B)/100",0,200,"km/h","7E0","","",1,0
+"Fuel Rail Pressure","Fuel.P","0x220123","(A*256+B)*0.145",0,30000,"psi","7E0","","",1,0
+"şanzıman yağ sıcaklığı ","Gear","0x21a6","AF-40",0,0,"°C","auto","","",1,0
